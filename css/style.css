@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    flex: 1;
+    margin: 0%;
+}
+
+body {
+    height: 100vh;
+}
+
+.restaurant-img {
+    object-fit: cover;
+    height: 375px;
+    width: 100%;
+}
+
+.restaurant-logo {
+    border-radius: 100%;
+    width: 150px;
+    position: relative;
+
+}
+
+p{
+    color: orange;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+    margin-left: 25px;
+}
+
+.main-course-div {
+    background-color: rgb(243, 243, 237);
+    height: 125px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
