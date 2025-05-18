@@ -1,27 +1,27 @@
 function init() {
-    renderMainCourses ();
-    renderBasketCourses ();
+    renderMainDishes();
+    renderBasketDishes();
 }
 
 
-function renderMainCourses () {
-    let mainCoursesRef = document.getElementById("main-courses");
-    mainCoursesRef.innerHTML = "";
+function renderMainDishes() {
+    let mainDishRef = document.getElementById("main-dish");
+    mainDishRef.innerHTML = "";
 
-    for (let indexMainCourses = 0; indexMainCourses < mainCourses.length; indexMainCourses++) {
-        mainCoursesRef.innerHTML += getMainCoursesTemplate(indexMainCourses);
+    for (let indexMainDishes = 0; indexMainDishes < mainDishes.length; indexMainDishes++) {
+        mainDishRef.innerHTML+= getMainDishTemplate(indexMainDishes);
     }
 }
 
-function renderBasketCourses () {
-    let basketCoursesRef = document.getElementById("basket-courses");
-    basketCoursesRef.innerHTML = "";
+function renderBasketDishes () {
+    let basketDishesRef = document.getElementById("basket-dish");
+    basketDishesRef.innerHTML = "";
 
-    for (let indexBasketCourses = 0; indexBasketCourses < basketCourses.length; indexBasketCourses++) {
-        basketCoursesRef.innerHTML += getBasketCoursesTemplate(indexBasketCourses);
+    for (let indexBasketDish = 0; indexBasketDish < basketCourses.length; indexBasketDish++) {
+        basketDishesRef.innerHTML += getBasketDishTemplate(indexBasketDish);
     }
 }
 
-function addToBasket(){
+/*function addToBasket(){
     let course = 
-}
+}*/
