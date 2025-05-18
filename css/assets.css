@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+
+p{
+    color: orange;
+}
+
+
+main {
+    display: flex;
+    
+}
+
+section {
+    width:auto;
+    width: calc(100% - 250px);
+
+}
+
+aside {
+    width: 250px;
+    background-color:rgb(243, 243, 237);
+    flex-grow: 1;
+
+}
+
+h2 {
+    margin-bottom: 25px;
+}
