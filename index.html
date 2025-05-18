@@ -6,12 +6,13 @@
     <title>Bestellapp</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon-16x16.png">
     <script src="./script.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/object.js"></script>
+    <script src="./js/templates.js"></script>
     <link rel="stylesheet" href="./css/style.css"> 
     <link rel="stylesheet" href="./css/assets.css"> 
     <link rel="stylesheet" href="./css/header-footer.css"> 
 </head>
-<body>
+<body onload="init()">
     <header>
         <img src="./img/Bestell App- Logo.svg" alt="Bestellapp" class="logo">
         <div class="navbar">
@@ -30,12 +31,7 @@
 
             <div class="restaurant-menus">
                 <h2>Hauptgerichte</h3>
-                    <div id="main-courses" class="main-courses">
-                        <div class="main-course-div">
-                        <h3>Chicken Tikka Masala <img src="./img/add_icon.svg" alt="hinzufügen" class="icon" id="add-to-basket"></h3>
-                        <span class="menu-price">14,50€</span>
-                        <span>Hühnerfilet in exotischen Gewürzen mariniert mit einer mittelscharfen Sauce, im Lehmofen gegrillt</span>
-                        </div>
+                    <div id="main-courses" class="main-courses">  
                     </div>
             </div>
         </section>
