@@ -24,3 +24,9 @@ let mainCourses = [
         "info" : "indische Spezialitäten mit Hühnerbrustfilet, mittelscharfer Sauce, Zwiebeln, Paprika, Knoblauch, Ingwer und Tomaten.",
     },
 ]
+
+let basketCourses = [
+    {   "course" : "",
+        "price" : "",
+    }
+]

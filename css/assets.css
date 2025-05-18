@@ -22,12 +22,12 @@ main {
 
 section {
     width:auto;
-    width: calc(100% - 250px);
+    width: calc(100% - 400px);
 
 }
 
 aside {
-    width: 250px;
+    width: 400px;
     background-color:rgb(243, 243, 237);
     flex-grow: 1;
 
