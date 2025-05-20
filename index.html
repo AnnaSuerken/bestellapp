@@ -1,12 +1,12 @@
-´<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestellapp</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon-16x16.png">
     <script src="./script.js"></script>
-    <script src="./js/object.js"></script>
+    <script src="./js/db.js"></script>
     <script src="./js/templates.js"></script>
     <link rel="stylesheet" href="./css/style.css"> 
     <link rel="stylesheet" href="./css/assets.css"> 
@@ -14,15 +14,15 @@
 </head>
 <body onload="init()">
     <header>
-        <img src="./img/Bestell App- Logo.svg" alt="Bestellapp" class="logo">
+        <img src="./assets/img/Bestell App- Logo.svg" alt="Bestellapp" class="logo">
         <div class="navbar">
         </div>
     </header>
     <main class="content-wrapper">
         <section >
             <div class="restaurant-header">
-            <img src="./img/indian_buffet.jpg" alt="Resaturan Vorschau" class="restaurant-img">
-            <img src="./img/mumbai-palace.png" alt="Restaurant Logo" class="restaurant-logo">
+            <img src="./assets/img/indian_buffet.jpg" alt="Resaturan Vorschau" class="restaurant-img">
+            <img src="./assets/img/mumbai-palace.png" alt="Restaurant Logo" class="restaurant-logo">
             </div>
             <div class="restaurant-info">
                 <h1>Mumbai Palace</h2>
@@ -31,15 +31,15 @@
 
             <div class="restaurant-menus">
                 <h2>Hauptgerichte</h3>
-                <img src="./img/main-dish.jpg" alt="Haupgerichte" class="dish-section-header">
+                <img src="./assets/img/main-dish.jpg" alt="Haupgerichte" class="dish-section-header">
                     <div id="main-dish" class="main-dish">  
                     </div>
                 <h2>Beilagen</h3>
-                <img src="./img/side-dish.jpg" alt="Beilagen" class="dish-section-header">
+                <img src="./assets/img/side-dish.jpg" alt="Beilagen" class="dish-section-header">
                     <div id="side-dish" class="main-dish">  
                     </div>
                 <h2>Nachtisch</h3>
-                <img src="./img/dessert.jpg" alt="Nachtisch" class="dish-section-header">
+                <img src="./assets/img/dessert.jpg" alt="Nachtisch" class="dish-section-header">
                     <div id="dessert" class="main-dish">  
                     </div>
             </div>
@@ -47,8 +47,8 @@
         <aside>
             <div class="basket">
                 <h2>Warenkorb</h2>
-                <div class="empty-basket">
-                    <img class="icon-basket" src="./img/shoppingbasket.svg" alt="leerer Einkaufswagen">
+                <div class="empty-basket" id="empty-basket">
+                    <img class="icon-basket" src="./assets/img/shoppingbasket.svg" alt="leerer Einkaufswagen">
                     <span>Wähle leckere Gerichte aus der Karte und bestelle Dein Menü.</span>
                 </div>
                 <div id="basket-dish">

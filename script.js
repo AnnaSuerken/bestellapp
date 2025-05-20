@@ -17,11 +17,25 @@ function renderBasketDishes () {
     let basketDishesRef = document.getElementById("basket-dish");
     basketDishesRef.innerHTML = "";
 
-    for (let indexBasketDish = 0; indexBasketDish < basketCourses.length; indexBasketDish++) {
+    for (let indexBasketDish = 0; indexBasketDish < basketDishes.length; indexBasketDish++) {
         basketDishesRef.innerHTML += getBasketDishTemplate(indexBasketDish);
     }
 }
 
-/*function addToBasket(){
-    let course = 
-}*/
+function addToBasket(indexMainDishes){
+    let mainDish = mainDishes[indexMainDishes].course;
+    let mainDishPrice = mainDishes[indexMainDishes].price;
+
+    basketDishes.push(basketInputTemplate(mainDish, mainDishPrice));
+    init();
+}
+
+function clearingBasket(){
+    let basketInput = document.getElementById("basket-dish");
+    let emptyBasket = document.getElementById("empty-basket")
+
+    if (basketInput !== "") {
+        emptyBasket.classList.add("d_none")
+        
+    }
+}
