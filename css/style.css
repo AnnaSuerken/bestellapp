@@ -38,12 +38,6 @@
     width: 55px;
 }
 
-.basket {
-    position: sticky;
-    top: 78;
-    margin: 32px 32px;
-}
-
 .restaurant-info, .restaurant-menus {
     margin: 64px 32px;
 }
@@ -53,39 +47,10 @@
     flex-direction: column;
     gap: 15px;
 }
-.icon-basket {
-    width: 55px
-}
-.empty-basket {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
-}
-
-.basket-dishes {
-    display: flex;
-    justify-content: space-between;
-}
-
-.course-title {
-    font-weight: bold;
-}
-
-.course-price-basket {
-    color: black;
-
-}
 
 .dish-section-header{
     object-fit: cover;
     height: 175px;
     width: 100%;
     margin-bottom: 32px;
-}
-
-.d_none {
-    display: none;
 }

@@ -1,0 +1,39 @@
+.basket {
+    position: sticky;
+    margin: 32px 32px;
+    top:85px;
+}
+
+.basket-header {
+    text-align: center;
+
+}
+.icon-basket {
+    width: 55px
+}
+.empty-basket {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.basket-dishes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.course-title {
+    font-weight: bold;
+}
+
+.course-price-basket {
+    color: black;
+
+}
+
+.d_none {
+    display: none;
+}
