@@ -23,6 +23,10 @@
     margin-bottom: 32px;
 }
 
+.main-course-div:hover {
+    background-color: rgb(240, 223, 182);
+}
+
 .course-price {
     color: orange;
     font-weight: bold;
@@ -36,6 +40,11 @@
 .icon {
     float: right;
     width: 55px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.1);
 }
 
 .restaurant-info, .restaurant-menus {
