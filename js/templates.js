@@ -17,5 +17,6 @@ function basketInputTemplate(mainDish, mainDishPrice){
     return {
         "course" : mainDish,
         "price" : mainDishPrice,
-        } 
+        "quantity" : 1,
+        };
 }

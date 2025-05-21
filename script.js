@@ -22,11 +22,17 @@ function renderBasketDishes () {
     }
 }
 
-function addToBasket(indexMainDishes){
+function addToBasket(indexMainDishes, indexBasketDish){
     let mainDish = mainDishes[indexMainDishes].course;
+    let basketDish = basketDishes.course;
     let mainDishPrice = mainDishes[indexMainDishes].price;
+    let existingDish = basketDishes.find(basketDishes => basketDish === mainDish && basketDishes.price === mainDishPrice);
 
-    basketDishes.push(basketInputTemplate(mainDish, mainDishPrice));
+    if (existingDish) {
+        existingDish.quantity++;
+    } else {
+
+    basketDishes.push(basketInputTemplate(mainDish, mainDishPrice))};
     init();
 }
 
@@ -39,3 +45,4 @@ function clearingBasket(){
         
     }
 }
+

@@ -22,7 +22,8 @@
 
 .basket-dishes {
     display: flex;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .course-title {
