@@ -1,8 +1,8 @@
 let mainDishes= [
-        { "course" : "Chicken Tikka Masala (mittelscharf)",
+        { "course" : "Chicken Tikka Masala",
         "price" : 14.50,
         "quantity": 1,
-        "info" : "Hühnerfilet in exotischen Gewürzen mariniert mit einer mittelscharfen Sauce, im Lehmofen gegrillt.",
+        "info" : "Hühnerfilet in exotischen Gewürzen mariniert mit einer mittelscharfen Sauce, im Lehmofen gegrillt. (mittelscharf)",
         },
         { "course" : "Chicken Korma",
         "price" : 14.90,
@@ -24,10 +24,10 @@ let mainDishes= [
         "quantity": 1,
         "info" : "Gegrilltes Hähnchenbrustfilet in Tomaten-Butter-Sahnesauce.",
         },
-        { "course" : "Karahi Chicken (mittelscharf)",
+        { "course" : "Karahi Chicken",
         "price" : 13.90,
         "quantity": 1,
-        "info" : "indische Spezialitäten mit Hühnerbrustfilet, mittelscharfer Sauce, Zwiebeln, Paprika, Knoblauch, Ingwer und Tomaten.",
+        "info" : "indische Spezialitäten mit Hühnerbrustfilet, mittelscharfer Sauce, Zwiebeln, Paprika, Knoblauch, Ingwer und Tomaten.  (mittelscharf)",
         },
     ]
 let sideDishes = [

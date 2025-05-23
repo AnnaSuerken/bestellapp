@@ -28,3 +28,32 @@ h2 {
  h1 {
     font-size: 32px;
  }
+
+ @media(max-width : 1000px){
+
+    section {
+    width:auto;
+    width: calc(100% - 250px);
+
+    }
+
+    aside {
+    width: 250px;
+    background-color:rgb(243, 243, 237);
+    flex-grow: 1;
+
+    }
+}
+
+ @media(max-width : 800px){
+
+    section {
+    width: 100%;
+
+    }
+
+    aside {
+        width: none;
+        display: none;
+    }
+}

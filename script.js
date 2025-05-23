@@ -17,22 +17,23 @@ function renderBasketDishes () {
     let basketDishesRef = document.getElementById("basket-dish");
     basketDishesRef.innerHTML = "";
 
-    for (let indexBasketDish = 0; indexBasketDish < basketDishes.length; indexBasketDish++) {
-        basketDishesRef.innerHTML += getBasketDishTemplate(indexBasketDish);
+    for (let indexBasketDishes = 0; indexBasketDishes < basketDishes.length; indexBasketDishes++) {
+        basketDishesRef.innerHTML += getBasketDishTemplate(indexBasketDishes);
     }
 }
 
-function addToBasket(indexMainDishes, indexBasketDish){
+function addToBasket(indexMainDishes){
     let mainDish = mainDishes[indexMainDishes].course;
-    let basketDish = basketDishes.course;
     let mainDishPrice = mainDishes[indexMainDishes].price;
-    let existingDish = basketDishes.find(basketDishes => basketDish === mainDish && basketDishes.price === mainDishPrice);
+    let mainDishQuantity = mainDishes[indexMainDishes].quantity;
+    let existingDish = basketDishes.find((basketDishes) => basketDishes.course === mainDish);
 
-    if (existingDish) {
+    if (existingDish ) {
         existingDish.quantity++;
+        existingDish.price * existingDish.quantity;
     } else {
 
-    basketDishes.push(basketInputTemplate(mainDish, mainDishPrice))};
+    basketDishes.push(basketInputTemplate(mainDish, mainDishPrice, mainDishQuantity))};
     init();
 }
 
@@ -45,4 +46,3 @@ function clearingBasket(){
         
     }
 }
-

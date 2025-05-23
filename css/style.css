@@ -63,3 +63,42 @@
     width: 100%;
     margin-bottom: 32px;
 }
+
+/* Responsive */
+
+@media(max-width : 1000px){
+
+.restaurant-logo {
+    border-radius: 100%;
+    width: 125px;
+}
+}
+
+@media(max-width : 800px){
+    
+    .restaurant-logo {
+        border-radius: 100%;
+        width: 75px;
+        top: 290px;
+        left: 32px;
+
+    }
+}
+
+@media(max-width : 500px){
+
+    .restaurant-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 125px;
+    }
+    
+    .restaurant-img {
+        height: 275px;
+        width: 425px;
+        border-radius: 25px;
+}
+}
+
+

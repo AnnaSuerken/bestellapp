@@ -9,14 +9,15 @@ function getMainDishTemplate(indexMainDishes) {
 function getBasketDishTemplate(indexBasketDish){
     return `<div class="basket-dishes">
                         <span class="course-title">${basketDishes[indexBasketDish].course}</span>
+                        <span class="course-amount">Anzahl: ${basketDishes[indexBasketDish].quantity}</span>
                         <span class="course-price-basket">${basketDishes[indexBasketDish].price.toFixed(2)} €</span>
                     </div>`            
 }
 
-function basketInputTemplate(mainDish, mainDishPrice){
+function basketInputTemplate(mainDish, mainDishPrice, mainDishQuantity){
     return {
         "course" : mainDish,
         "price" : mainDishPrice,
-        "quantity" : 1,
+        "quantity" : mainDishQuantity,
         };
 }

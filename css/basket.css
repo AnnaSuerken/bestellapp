@@ -38,3 +38,15 @@
 .d_none {
     display: none;
 }
+
+/* Responisve */
+
+@media(max-width : 1000px){
+
+.basket {
+    position: sticky;
+    margin: 32px 32px;
+    top:85px;
+}
+}
+
