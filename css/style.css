@@ -13,7 +13,7 @@
 
 }
 
-.main-course-div {
+.main-dish-div {
     background-color: rgb(243, 243, 237);
     border-radius: 20px;
     display: flex;
@@ -23,11 +23,11 @@
     margin-bottom: 32px;
 }
 
-.main-course-div:hover {
+.main-dish-div:hover {
     background-color: rgb(240, 223, 182);
 }
 
-.course-price {
+.dish-price {
     color: orange;
     font-weight: bold;
 }

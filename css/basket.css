@@ -22,15 +22,15 @@
 
 .basket-dishes {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
+    flex-direction: column;
 }
 
-.course-title {
+.dish-title {
     font-weight: bold;
 }
 
-.course-price-basket {
+.dish-price-basket {
     color: black;
 
 }
@@ -38,6 +38,29 @@
 .d_none {
     display: none;
 }
+
+.sum-of-dish {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;;
+}
+
+.dish-amount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-basket{
+    width: 30px;
+    cursor: pointer;
+}
+
+.icon-basket:hover {
+    transform: scale(1.1);
+}
+
 
 /* Responisve */
 
