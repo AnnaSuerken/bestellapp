@@ -6,16 +6,16 @@ function getMainDishTemplate(indexMainDishes) {
                         </div>`
 }
 
-function getBasketDishTemplate(indexBasketDish){
+function getBasketDishTemplate(indexBasketDishes){
     return `<div class="basket-dishes">
-                        <h3 class="dish-title">${basketDishes[indexBasketDish].dish}</h3>
+                        <h3 class="dish-title">${basketDishes[indexBasketDishes].dish}</h3>
                             <div class="sum-of-dish">
                                     <div class="dish-amount">
                                         <img src="./assets/img/minus-orange.png" alt="reduzieren" class="icon-basket">
-                                        <span> ${basketDishes[indexBasketDish].quantity}x</span>
-                                        <img src="./assets/img/plus-orange.png" alt="erhöhen" class="icon-basket">
+                                        <span>${basketDishes[indexBasketDishes].quantity}x</span>
+                                        <img src="./assets/img/plus-orange.png" alt="erhöhen" class="icon-basket" onclick="${increaseDishAmount(indexBasketDishes)}">
                                     </div>
-                                <span class="dish-price-basket">${sumOfDish(indexBasketDish).toFixed(2)} €</span>
+                                <span class="dish-price-basket">${sumOfDish(indexBasketDishes).toFixed(2)} €</span>
                             </div>
                     </div>`            
 }

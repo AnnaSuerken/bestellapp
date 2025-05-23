@@ -46,8 +46,12 @@ function addToBasket(indexMainDishes){
     init();
 }
 
-function sumOfDish(indexBasketDish){
-    return basketDishes[indexBasketDish].price.toFixed(2) * basketDishes[indexBasketDish].quantity;
+function increaseDishAmount(indexBasketDishes){
+    basketDishes[indexBasketDishes].quantity++;
+}
+
+function sumOfDish(indexBasketDishes){
+    return basketDishes[indexBasketDishes].price.toFixed(2) * basketDishes[indexBasketDishes].quantity;
 }
 
 

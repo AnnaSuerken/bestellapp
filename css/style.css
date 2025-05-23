@@ -64,6 +64,24 @@
     margin-bottom: 32px;
 }
 
+.menu-bar {
+    width: 95%;
+    height: 64px;
+    border-radius: 50px;
+    background-color: rgb(243, 243, 237);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 32px;
+}
+
+.section-links{
+    color: orange;
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
 /* Responsive */
 
 @media(max-width : 1000px){
