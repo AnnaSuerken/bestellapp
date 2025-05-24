@@ -1,3 +1,4 @@
+
 function DishTemplate(array, index) {
     let dish= array[index];
     return `<div class="main-dish-div">
@@ -35,5 +36,17 @@ function basketInputTemplate(mainDish, mainDishPrice, mainDishQuantity){
         "dish" : mainDish,
         "price" : mainDishPrice,
         "quantity" : mainDishQuantity,
+        };
+}
+
+function testBasketInputTemplate(array, index){
+    let dish= array[index].dish;
+    let price = array[index].price;
+    let quantity = array[index].quantity;
+
+    return {
+        "dish" : dish,
+        "price" : price,
+        "quantity" : quantity,
         };
 }
