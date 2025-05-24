@@ -25,8 +25,23 @@ h2 {
     margin-bottom: 25px;
 }
 
- h1 {
+h1 {
     font-size: 32px;
+ }
+
+ button {
+    background-color: orange;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+ }
+
+ button:hover {
+    transform: scale(1.1);
  }
 
  @media(max-width : 1000px){

@@ -61,6 +61,12 @@
     transform: scale(1.1);
 }
 
+.basket-check-out {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 32px;
+}
 
 /* Responisve */
 
