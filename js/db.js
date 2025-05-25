@@ -71,5 +71,28 @@ let desserts = [
         },
     ]
 
+let dishes = {
+    mainDishes: [
+        { "dish": "Chicken Tikka Masala", "price": 14.50, "quantity": 1, "info": "Hühnerfilet in exotischen Gewürzen mariniert mit einer mittelscharfen Sauce, im Lehmofen gegrillt. (mittelscharf)" },
+        { "dish": "Chicken Korma", "price": 14.90, "quantity": 1, "info": "Hühnerfleisch-Stücke in einer milden Sahne-Currysauce mit Nüssen." },
+        { "dish": "Chicken Curry", "price": 13.90, "quantity": 1, "info": "Hühnerfleisch in einer würziger Currysauce" },
+        { "dish": "Mango Chicken", "price": 14.90, "quantity": 1, "info": "Hühnerfleisch mit Mango in einer milden Currysauce." },
+        { "dish": "Butter Chicken", "price": 14.90, "uantity": 1, "info": "Gegrilltes Hähnchenbrustfilet in Tomaten-Butter-Sahnesauce." },
+        { "dish": "Karahi Chicken", "price": 13.90, "quantity": 1, "info": "indische Spezialitäten mit Hühnerbrustfilet, mittelscharfer Sauce, Zwiebeln, Paprika, Knoblauch, Ingwer und Tomaten.  (mittelscharf)" },
+    ],
+    sideDishes: [
+        { "dish": "Plain Reis", "price": 4.00, "quantity": 1, "info": "Reis ohne alles." },
+        { "dish": "Egg Reis", "price": 6.50, "quantity": 1, "info": "gebratener Reis mit Ei und Gewürzen." },
+        { "dish": "Plain Naan", "price": 2.75, "quantity": 1, "info": "Indisches Brot aus hellem Weizenmehl zubereitet" },
+        { "dish": "Cheese Naan", "price": 4.90, "quantity": 1, "info": "Indisches Brot gefüllt mit hausgemachtem Käse." },
+    ],
+    desserts: [
+        { "dish": "Gulab Jamoon", "price": 4.50, "quantity": 1, "info": "Gebratene süße Milchbällchen." },
+        { "dish": "Rasmalai Käsebällchen", "price": 5.50, "quantity": 1, "info": "In cremiger Milch eingetaucht." },
+        { "dish": "Mango Lassi 0,4l", "price": 4.00, "quantity": 1, "info": "hausgemacht mit Joghurt, Milch und Mango" },
+    ]
+};
+
+
 
 let basketDishes = [];

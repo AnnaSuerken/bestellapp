@@ -9,7 +9,7 @@ function DishTemplate(array, index) {
 }
 
 function getBasketDishTemplate(indexBasketDishes){
-    return `<div class="basket-dishes">
+    return `<div class="basket-dishes" id="basket-dishes${indexBasketDishes}">
                         <h3 class="dish-title">${basketDishes[indexBasketDishes].dish}</h3>
                             <div class="sum-of-dish">
                                     <div class="dish-amount">
@@ -18,6 +18,7 @@ function getBasketDishTemplate(indexBasketDishes){
                                         <img src="./assets/img/plus-orange.png" alt="erhöhen" class="icon-basket" onclick="increaseQuantity(${indexBasketDishes})">
                                     </div>
                                 <span class="dish-price-basket">${sumOfDish(indexBasketDishes).toFixed(2)} €</span>
+                                <img src="./assets/img/bin_delete.svg" alt="alles löschen" class="icon-basket" onclick="deleteDish(${indexBasketDishes})">
                             </div>
                     </div>`            
 }
@@ -39,17 +40,6 @@ function basketInputTemplate(mainDish, mainDishPrice, mainDishQuantity){
         };
 }
 
-function testBasketInputTemplate(array, index){
-    let dish= array[index].dish;
-    let price = array[index].price;
-    let quantity = array[index].quantity;
-
-    return {
-        "dish" : dish,
-        "price" : price,
-        "quantity" : quantity,
-        };
-}
 
 function getBasketCheckoutTemplate(){
     return `<div class="empty-basket">

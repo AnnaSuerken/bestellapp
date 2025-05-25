@@ -64,6 +64,9 @@ function increaseQuantity(indexBasketDishes){
 
 function decreaseQuantity(indexBasketDishes){
     basketDishes[indexBasketDishes].quantity--;
+    if (basketDishes[indexBasketDishes].quantity <= 0){
+        basketDishes.splice(indexBasketDishes, 1);
+    }
     init();
 }
 
@@ -95,4 +98,11 @@ function openNewBasket(){
     let emptyBasket = document.getElementById("empty-basket");
     renderBasketDishes ();
     emptyBasket.classList.remove("d_none");
+}
+
+function deleteDish(indexBasketDishes){
+    let basketDishesRef = document.getElementById(`basket-dishes${indexBasketDishes}`)
+    basketDishesRef.innerHTML = "";
+    basketDishes.splice(indexBasketDishes, 1);
+    renderBasketDishes ();
 }
