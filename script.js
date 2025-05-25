@@ -39,7 +39,7 @@ function renderBasketDishes () {
         emptyBasket.classList.remove("d_none");
     } else if (basketDishes.length > 0){ 
         emptyBasket.classList.add("d_none");
-        basketCheckoutRef.innerHTML += getBasketCheckoutTemplate();};
+        basketCheckoutRef.innerHTML += getBasketSumTemplate();};
 }
 
 function addToBasket(indexMainDishes){
@@ -80,6 +80,19 @@ function sumOfBasket(){
 }
 
 function clearBasket(){
+    let basketCheckoutRef = document.getElementById("basket-check-out");
+    basketCheckoutRef.innerHTML = "";
+    let emptyBasket = document.getElementById("empty-basket");
+    
+
     basketDishes = [];
     renderBasketDishes ();
+    emptyBasket.classList.add("d_none");
+    basketCheckoutRef.innerHTML += getBasketCheckoutTemplate();
+}
+
+function openNewBasket(){
+    let emptyBasket = document.getElementById("empty-basket");
+    renderBasketDishes ();
+    emptyBasket.classList.remove("d_none");
 }

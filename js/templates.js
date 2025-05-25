@@ -2,7 +2,7 @@
 function DishTemplate(array, index) {
     let dish= array[index];
     return `<div class="main-dish-div">
-                            <h3>${dish.dish} <img src="./assets/img/plus-orange.png" alt="hinzufügen" class="icon" id="add-to-basket" onclick=" addToBasket(${index})"></h3>
+                            <h3>${dish.dish} <img src="./assets/img/plus-orange.png" alt="hinzufügen" class="icon" id="add-to-basket" onclick="addToBasket(${index})"></h3>
                             <span class="dish-price">${dish.price.toFixed(2)} €</span>
                             <span>${dish.info} </span>
                         </div>`
@@ -22,7 +22,7 @@ function getBasketDishTemplate(indexBasketDishes){
                     </div>`            
 }
 
-function getBasketCheckoutTemplate(){
+function getBasketSumTemplate(){
     return `<div class="basket-check-out">
         <span> Zwischensumme: ${sumOfBasket().toFixed(2)} </span>
         <span> Lieferkosten: 3.50 €</span>  
@@ -49,4 +49,11 @@ function testBasketInputTemplate(array, index){
         "price" : price,
         "quantity" : quantity,
         };
+}
+
+function getBasketCheckoutTemplate(){
+    return `<div class="empty-basket">
+                    <span>Vielen Dank für Ihre Bestellung.</span>
+                    <button onclick="openNewBasket()">Weitere Bestellung aufgeben</button>
+            </div>`
 }
