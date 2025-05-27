@@ -68,6 +68,14 @@
     margin-bottom: 32px;
 }
 
+.basket-dish {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: orange;
+    max-height: 50vh;
+
+}
+
 /* Responisve */
 
 @media(max-width : 1000px){

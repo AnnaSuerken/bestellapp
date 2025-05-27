@@ -1,27 +1,21 @@
 function init() {
-    renderDishes();
+    renderDishes("mainDishes");
+    renderDishes("sideDishes");
+    renderDishes("desserts");
     renderBasketDishes();
 }
 
-function renderDishes() {
-    let mainDishRef = document.getElementById("main-dish");
-    mainDishRef.innerHTML = "";
-    let sideDishRef = document.getElementById("side-dish");
-    sideDishRef.innerHTML = "";
-    let dessertsRef = document.getElementById("dessert");
-    dessertsRef.innerHTML = "";
+function renderDishes(arrayName) {
+    let array = dishes[arrayName];
+    let containerId = `${arrayName}-container`;
+    let container = document.getElementById(containerId);
+    container.innerHTML = "";
 
-    for (let indexMainDishes = 0; indexMainDishes < mainDishes.length; indexMainDishes++) {
-        mainDishRef.innerHTML+= DishTemplate(mainDishes, indexMainDishes);
+
+    for (let index = 0; index < array.length; index++) {
+        container.innerHTML+= DishTemplate(arrayName, array, index);
     }
 
-    for (let indexSideDishes = 0; indexSideDishes < sideDishes.length; indexSideDishes++) {
-        sideDishRef.innerHTML+= DishTemplate(sideDishes, indexSideDishes);
-    }
-
-    for (let indexDesserts = 0; indexDesserts < desserts.length; indexDesserts++) {
-        dessertsRef.innerHTML+= DishTemplate(desserts, indexDesserts);
-    }
 }
 
 function renderBasketDishes () {
@@ -42,17 +36,15 @@ function renderBasketDishes () {
         basketCheckoutRef.innerHTML += getBasketSumTemplate();};
 }
 
-function addToBasket(indexMainDishes){
-    let mainDish = mainDishes[indexMainDishes].dish;
-    let mainDishPrice = mainDishes[indexMainDishes].price;
-    let mainDishQuantity = mainDishes[indexMainDishes].quantity;
-    let existingDish = basketDishes.find((basketDishes) => basketDishes.dish === mainDish);
+function addToBasket(arrayName, index){
+    let dish = dishes[arrayName][index];
+    let existingDish = basketDishes.find((item) => item.title === dish.title);
 
     if (existingDish ) {
         existingDish.quantity++;
     } else {
 
-    basketDishes.push(basketInputTemplate(mainDish, mainDishPrice, mainDishQuantity))};
+    basketDishes.push(basketInputTemplate(dish.title, dish.price, dish.quantity))};
     init();
 }
 

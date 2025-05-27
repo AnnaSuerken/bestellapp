@@ -1,8 +1,8 @@
 
-function DishTemplate(array, index) {
-    let dish= array[index];
+function DishTemplate(arrayName, array, index) {
+    let dish = array[index];
     return `<div class="main-dish-div">
-                            <h3>${dish.dish} <img src="./assets/img/plus-orange.png" alt="hinzufügen" class="icon" id="add-to-basket" onclick="addToBasket(${index})"></h3>
+                            <h3>${dish.title} <img src="./assets/img/plus-orange.png" alt="hinzufügen" class="icon" id="add-to-basket" onclick="addToBasket('${arrayName}', ${index})"></h3>
                             <span class="dish-price">${dish.price.toFixed(2)} €</span>
                             <span>${dish.info} </span>
                         </div>`
@@ -10,7 +10,7 @@ function DishTemplate(array, index) {
 
 function getBasketDishTemplate(indexBasketDishes){
     return `<div class="basket-dishes" id="basket-dishes${indexBasketDishes}">
-                        <h3 class="dish-title">${basketDishes[indexBasketDishes].dish}</h3>
+                        <h3 class="dish-title">${basketDishes[indexBasketDishes].title}</h3>
                             <div class="sum-of-dish">
                                     <div class="dish-amount">
                                         <img src="./assets/img/minus-orange.png" alt="reduzieren" class="icon-basket" onclick="decreaseQuantity(${indexBasketDishes})">
@@ -32,11 +32,11 @@ function getBasketSumTemplate(){
         </div> `
 }
 
-function basketInputTemplate(mainDish, mainDishPrice, mainDishQuantity){
+function basketInputTemplate(title, price, quantity){
     return {
-        "dish" : mainDish,
-        "price" : mainDishPrice,
-        "quantity" : mainDishQuantity,
+        "title" : title,
+        "price" : price,
+        "quantity" : quantity,
         };
 }
 
