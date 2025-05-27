@@ -17,7 +17,7 @@ let dishes = {
     ],
     desserts: [
         { "title": "Gulab Jamoon", "price": 4.50, "quantity": 1, "info": "Gebratene süße Milchbällchen." },
-        { "title": "Rasmalai Käsebällchen", "price": 5.50, "quantity": 1, "info": "In cremiger Milch eingetaucht." },
+        { "title": "Rasmalai <br> Käsebällchen", "price": 5.50, "quantity": 1, "info": "In cremiger Milch eingetaucht." },
         { "title": "Mango Lassi 0,4l", "price": 4.00, "quantity": 1, "info": "hausgemacht mit Joghurt, Milch und Mango" },
     ]
 };

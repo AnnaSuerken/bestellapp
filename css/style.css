@@ -65,14 +65,14 @@
 }
 
 .menu-bar {
-    width: 95%;
     height: 64px;
     border-radius: 50px;
     background-color: rgb(243, 243, 237);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-left: 32px;
+    margin-right: 32px;
 }
 
 .section-links{
@@ -103,20 +103,33 @@
     }
 }
 
+@media(max-width : 600px){
+
+
+    .menu-bar {
+        display: none;
+}
+
+}
+
 @media(max-width : 500px){
 
-    .restaurant-header{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 125px;
-    }
-    
-    .restaurant-img {
-        height: 275px;
-        width: 425px;
-        border-radius: 25px;
+
+    .icon{
+    width: 38px;
+
 }
+
+}
+
+@media(max-width : 400px){
+
+
+    .icon{
+    width: 25px;
+
+}
+
 }
 
 
