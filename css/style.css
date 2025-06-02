@@ -85,7 +85,7 @@
 .burger-menu-box {
     display: none;
     flex-direction: column;
-    gap: 15px;;
+    gap: 15px;
     position: absolute;
     top: 78px;
     right: 0;
