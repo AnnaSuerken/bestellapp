@@ -15,11 +15,17 @@
     <link rel="stylesheet" href="./css/standard.css"> 
 </head>
 <body onload="init()">
+    <div class="content">
     <header>
         <a href="./index.html"><img src="./assets/img/Bestell App- Logo.svg" alt="Bestellapp" class="logo"></a>
-        <div class="navbar">
-        </div>
+        <img src="./assets/img/burger_menu.png" alt="öffne Menu" onclick="toggleBurgerMenu()" class="icon burger-menu-btn">
     </header>
+    <div id="burger-menu" class="burger-menu-box burger-menu-closed">
+        <a href="#main-dishes" class="section-links">Hauptgerichte</a> 
+        <a href="#side-dishes" class="section-links">Beilagen</a> 
+        <a href="#desserts" class="section-links">Nachtisch</a> 
+        <a href="http://" class="section-links"></a> 
+    </div>
     <main class="content-wrapper">
         <section >
             <div class="restaurant-header">
@@ -67,6 +73,7 @@
             </div>
         </aside>
     </main>
+    </div>
     <footer>
         <span>© 2025 Bestell App</span>
         <div class="legal">

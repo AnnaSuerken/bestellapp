@@ -98,3 +98,7 @@ function deleteDish(indexBasketDishes){
     basketDishes.splice(indexBasketDishes, 1);
     renderBasketDishes ();
 }
+
+function toggleBurgerMenu(){
+    document.getElementById("burger-menu").classList.toggle("burger-menu-closed")
+}
