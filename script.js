@@ -102,3 +102,7 @@ function deleteDish(indexBasketDishes){
 function toggleBurgerMenu(){
     document.getElementById("burger-menu").classList.toggle("burger-menu-closed")
 }
+
+function toggleRespBasket(){
+    document.getElementById("basket-overlay").classList.replace("basket-side-layout", "rep-basket-overlay")
+}

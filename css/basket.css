@@ -1,5 +1,11 @@
+.basket-side-layout {
+    width: 400px;
+    background-color:rgb(243, 243, 237);
+    flex-grow: 1;
+}
+
 .basket {
-    position: sticky;
+    position: fixed;
     margin: 32px 32px;
     top:85px;
 }
@@ -73,17 +79,22 @@
     overflow-x: hidden;
     scrollbar-color: orange;
     max-height: 50vh;
+}
 
+.rep-basket-overlay {
+    position: absolute;
+    top: 78px;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(243, 243, 237);
 }
 
 /* Responisve */
 
-@media(max-width : 1000px){
+ @media(max-width : 800px){
 
-.basket {
-    position: sticky;
-    margin: 32px 32px;
-    top:85px;
+    .basket-side-layout {
+        width: none;
+        display: none;
+    }
 }
-}
-

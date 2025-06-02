@@ -14,13 +14,6 @@ section {
 
 }
 
-aside {
-    width: 400px;
-    background-color:rgb(243, 243, 237);
-    flex-grow: 1;
-
-}
-
 h2 {
     margin-bottom: 25px;
 }
@@ -51,13 +44,6 @@ h1 {
     width: calc(100% - 250px);
 
     }
-
-    aside {
-    width: 250px;
-    background-color:rgb(243, 243, 237);
-    flex-grow: 1;
-
-    }
 }
 
  @media(max-width : 800px){
@@ -66,9 +52,14 @@ h1 {
     width: 100%;
 
     }
+}
 
-    aside {
-        width: none;
-        display: none;
+ @media(max-width : 500px){
+    h2 {
+    margin-bottom: 20px;
+    }
+
+    h1 {
+    font-size: 28px;
     }
 }
