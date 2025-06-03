@@ -106,3 +106,7 @@ function toggleBurgerMenu(){
 function toggleRespBasket(){
     document.getElementById("basket-overlay").classList.replace("basket-side-layout", "rep-basket-overlay")
 }
+
+function toggleRespBasketOff(){
+    document.getElementById("basket-overlay").classList.replace("rep-basket-overlay", "basket-side-layout")
+}

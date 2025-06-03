@@ -5,9 +5,13 @@
 }
 
 .basket {
+    width: 400px;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 32px 32px;
-    top:85px;
+    top: 85px;
 }
 
 .basket-header {
@@ -28,7 +32,6 @@
 
 .basket-dishes {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -74,6 +77,11 @@
     margin-bottom: 32px;
 }
 
+.basket-check-out-column {
+        display: flex;
+        justify-content: space-between;
+}
+
 .basket-dish {
     overflow-y: auto;
     overflow-x: hidden;
@@ -82,12 +90,24 @@
 }
 
 .rep-basket-overlay {
-    position: absolute;
+    position: fixed;
     top: 78px;
     width: 100%;
     height: 100%;
     background-color:rgb(243, 243, 237);
 }
+
+.close-btn {
+    width: 55px;
+    display: none;
+    cursor: pointer;
+    float: right;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+}
+
 
 /* Responisve */
 
@@ -97,4 +117,26 @@
         width: none;
         display: none;
     }
+
+    .close-btn {
+        width: 55px;
+        display: block;
 }
+
+    .basket {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .basket-check-out {
+        align-items: center;
+    }
+
+    .basket-check-out-column {
+    justify-content: space-between;
+    }
+}
+

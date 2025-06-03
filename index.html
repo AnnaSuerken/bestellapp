@@ -58,10 +58,9 @@
             </div>
         </section>
         <aside class="basket-side-layout" id="basket-overlay">
+            <img src="./assets/img/schliessen.png" alt="schließen" class="close-btn" onclick="toggleRespBasketOff()">
             <div class="basket">
-                <div>
-                    <h2 class="basket-header">Warenkorb</h2>
-                </div>
+                <h2 class="basket-header">Warenkorb</h2>
                 <div class="empty-basket" id="empty-basket">
                     <img class="icon-basket" src="./assets/img/shoppingbasket.svg" alt="leerer Einkaufswagen">
                     <span>Wähle leckere Gerichte aus der Karte und bestelle Dein Menü.</span>
@@ -70,12 +69,13 @@
                 </div>
                 <div id="basket-dish" class="basket-dish">
                 </div>
-            </div>
+            </div>  
         </aside>
-    </main>
-        <div class="extra-padding-bottom">
-            <button class="open-resp-basket-btn" id="open-resp-basket" onclick="toggleRespBasket()">Warenkorb öffnen</button>
+        <div>
+            <button class="open-resp-basket-btn" id="open-resp-basket" onclick="toggleRespBasket()">Warenkorb</button>
         </div>
+    </main>
+        
     </div>
     <footer>
         <span>© 2025 Bestell App</span>
