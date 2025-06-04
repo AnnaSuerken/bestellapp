@@ -71,6 +71,8 @@
     flex-direction: column;
     gap: 5px;
     margin-bottom: 32px;
+    margin-top: 18px;
+    
 }
 
 .basket-check-out-column {
@@ -108,6 +110,9 @@
     transform: scale(1.1);
 }
 
+.basket-content-div {
+    border-top: 2px solid orange;
+}
 
 
 /* Responisve */
