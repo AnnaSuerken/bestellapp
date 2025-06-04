@@ -25,7 +25,7 @@ function getBasketDishTemplate(indexBasketDishes){
 
 function getBasketSumTemplate(){
     return `<div class="basket-check-out">
-                <div class="basket-check-out-column"><span> Zwischensumme:</span> <span>${sumOfBasket().toFixed(2)} </span></div>
+                <div class="basket-check-out-column"><span> Zwischensumme:</span> <span>${sumOfBasket().toFixed(2)} €</span></div>
                 <div class="basket-check-out-column"><span> Lieferkosten:</span> <span>3.50 €</span> </div> 
                 <div class="basket-check-out-column"<span> Gesamtsumme:</span> <span>${(sumOfBasket()+ 3.50).toFixed(2)} €</span></div>
                 <button onclick="clearBasket()">Jetzt Bestellen</button>

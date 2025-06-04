@@ -10,6 +10,7 @@
     position: absolute;
     top: 325px;
     left: 35%;
+    z-index: 1;
 
 }
 
@@ -111,7 +112,6 @@
 }
 
 .open-resp-basket-btn {
-    width: 25%;
     display: none;
     position: fixed;
     top: 85%;
@@ -123,13 +123,14 @@
 
 @media(max-width : 1000px){
 
-.restaurant-logo {
-    border-radius: 100%;
-    width: 125px;
-}
-}
+    .restaurant-logo {
+        border-radius: 100%;
+        width: 125px;
+    }
 
-@media(max-width : 800px){
+    .open-resp-basket-btn {
+        display: block;
+    }
     
     .restaurant-logo {
         border-radius: 100%;
@@ -150,10 +151,6 @@
 
     .menu-bar {
         display: none;
-    }
-
-    .open-resp-basket-btn {
-        display: block;
     }
 
 }
