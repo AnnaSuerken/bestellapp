@@ -1,147 +1,149 @@
 .basket-side-layout {
-    width: 400px;
-    background-color:rgb(243, 243, 237);
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 400px;
+  background-color: rgb(243, 243, 237);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .basket {
-    position: fixed;
-    width: 350px;
-    margin: 32px 32px;
-    top: 85px;    
+  position: fixed;
+  margin: 32px 32px;
+  top: 85px;
+  right: 0px;
+  width: 350px;
 }
 
 .basket-header {
-    text-align: center;
-
+  text-align: center;
+  border-bottom: 2px solid orange;
+  margin-left: 32px;
 }
 .icon-basket {
-    width: 55px
+  width: 55px;
+  margin-top: 32px;
 }
 .empty-basket {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  margin-left: 32px;
 }
 
 .dish-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .dish-price-basket {
-    color: black;
-
+  color: black;
 }
 
 .d_none {
-    display: none;
+  display: none;
 }
 
 .sum-of-dish {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 15px;;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 
 .dish-amount {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.icon-basket{
-    width: 30px;
-    cursor: pointer;
+.icon-basket {
+  width: 30px;
+  cursor: pointer;
 }
 
 .icon-basket:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .basket-check-out {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 32px;
-    margin-top: 18px;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 32px;
+  margin-top: 18px;
 }
 
 .basket-check-out-column {
-        display: flex;
-        justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .basket-dishes {
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-color: orange;
-    max-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.basket-dish {
+  scrollbar-color: orange;
+  max-height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .rep-basket-overlay {
-    position: fixed;
-    top: 78px;
-    width: 100%;
-    height: 100%;
-    background-color:rgb(243, 243, 237);
-    z-index: 1000;
+  position: fixed;
+  top: 78px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 243, 237);
+  z-index: 1000;
 }
 
 .close-btn {
-    width: 55px;
-    display: none;
-    cursor: pointer;
-    float: right;
+  width: 55px;
+  display: none;
+  cursor: pointer;
+  float: right;
 }
 
 .close-btn:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .basket-content-div {
-    border-top: 2px solid orange;
+  margin-top: 32px;
+  margin-left: 32px;
 }
-
 
 /* Responisve */
 
- @media(max-width : 1000px){
+@media (max-width: 1000px) {
+  .basket-side-layout {
+    width: none;
+    display: none;
+  }
 
-    .basket-side-layout {
-        width: none;
-        display: none;
-    }
+  .close-btn {
+    width: 55px;
+    display: block;
+  }
 
-    .close-btn {
-        width: 55px;
-        display: block;
+  .basket {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .basket-check-out-column {
+    justify-content: space-between;
+  }
+
+  .basket-content-div {
+    width: 80%;
+  }
 }
-
-    .basket {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .basket-check-out-column {
-        justify-content: space-between;
-    }
-
-    .basket-content-div{
-        width: 80%;
-}
-
-}
-

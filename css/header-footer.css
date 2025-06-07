@@ -1,53 +1,50 @@
 header {
-    background-color: orange;
-    height: 78px;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    position: fixed;
-    z-index: 1000;
+  background-color: orange;
+  height: 78px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  position: fixed;
+  z-index: 1000;
 }
 
 footer {
-    background-color: orange;
-    height: 78px;
-    bottom: 0;
-    left: 0;
-    width:100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  background-color: orange;
+  height: 78px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: fixed;
 }
 
 .logo {
-    width: 150px;
-    object-fit: cover;
-    margin-left: 32px;
-    margin-top: 5px;
+  width: 150px;
+  object-fit: cover;
+  margin-left: 32px;
+  margin-top: 5px;
 }
 
 .legal {
-    display: flex;
-    gap: 15px;
-    color: white;
+  display: flex;
+  gap: 15px;
+  color: white;
 }
-
 
 .legal-links {
-    color: white;
-
+  color: white;
 }
-
 
 /* Responsive */
 
- @media(max-width : 500px){
-
-    .logo {
+@media (max-width: 500px) {
+  .logo {
     width: 115px;
-}
+  }
 }
