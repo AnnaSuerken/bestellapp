@@ -57,8 +57,8 @@
                     </div>
             </div>
         </section>
-        <aside class="basket-side-layout" id="basket-overlay">
-            <img src="./assets/img/schliessen.png" alt="schließen" class="close-btn" onclick="toggleRespBasketOff()">
+        <aside class="basket-side-layout-container" id="basket-overlay">
+            <img src="./assets/img/schliessen.png" alt="schließen" class="close-btn" onclick="toggleRespBasket('basket-overlay','rep-basket-overlay-container','basket-side-layout-container')">
             <div class="basket">
                 <h2 class="basket-header">Warenkorb</h2>
                 <div class="empty-basket" id="empty-basket">
@@ -74,7 +74,7 @@
             </div>  
         </aside>
         <div>
-            <button class="open-resp-basket-btn" id="open-resp-basket" onclick="toggleRespBasket()">Warenkorb</button>
+            <button class="open-resp-basket-btn" id="open-resp-basket" onclick="toggleRespBasket('basket-overlay', 'basket-side-layout-container', 'rep-basket-overlay-container')">Warenkorb</button>
         </div>
     </main>
         

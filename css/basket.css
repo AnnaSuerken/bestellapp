@@ -90,12 +90,13 @@
 
 .basket-dish {
   scrollbar-color: orange;
-  max-height: 50vh;
+  max-height: 40vh;
   overflow-y: auto;
   overflow-x: hidden;
+  padding-bottom: 32px;
 }
 
-.rep-basket-overlay {
+.rep-basket-overlay-container {
   position: fixed;
   top: 78px;
   width: 100%;
@@ -123,7 +124,7 @@
 /* Responisve */
 
 @media (max-width: 1000px) {
-  .basket-side-layout {
+  .basket-side-layout-container {
     width: none;
     display: none;
   }
