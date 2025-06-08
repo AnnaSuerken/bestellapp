@@ -13,7 +13,8 @@ function renderDishes(arrayName) {
 
   for (let index = 0; index < array.length; index++) {
     container.innerHTML += DishTemplate(arrayName, array, index);
-  }
+  };
+  renderBasketDishes()
 }
 
 function renderBasketDishes() {
@@ -119,5 +120,13 @@ function toggleBurgerMenu() {
 
 function toggleRespBasket(containerId, classToRemove, classToAdd) {
   let container = document.getElementById(containerId);
+  let isOpen = container.classList.contains(classToAdd);
+
   container.classList.replace(classToRemove, classToAdd);
+
+  if(container.classList.contains("rep-basket-overlay-container")) {
+    document.body.classList.add('no-scroll')
+  } else {
+    document.body.classList.remove('no-scroll')
+  }
 }

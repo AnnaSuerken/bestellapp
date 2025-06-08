@@ -136,6 +136,10 @@
     margin-left: 32px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 
 /* Responsive */
 
